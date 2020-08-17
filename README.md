@@ -53,7 +53,7 @@ imageSize: 468895
 #### MVP 
 
 - Find an API that suits for this web application
-- Construct an HTML to show what the application is all about and where the user will input their information
+- Construct an HTML to show what the application is all about and where the user will input the pill's information (imprint, color, shape)
 - Apply JavaScript to give results based on user's information
 - Add style to the application to make it presentable
 - Apply responsive design to the application
