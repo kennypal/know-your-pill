@@ -2,9 +2,9 @@ const getData = async (imprint, imprint2) => {
   // console.log(imprint, imprint2)
   let url;
   if (imprint !== '' && imprint2 !== '') {
-    url = `https://rximage.nlm.nih.gov/api/rximage/1/rxnav?parse=${imprint},${imprint2}`
+    url = `https://rximage.nlm.nih.gov/api/rximage/1/rxbase?parse=${imprint},${imprint2}`
   } else {
-    url = `https://rximage.nlm.nih.gov/api/rximage/1/rxnav?parse=${imprint}`
+    url = `https://rximage.nlm.nih.gov/api/rximage/1/rxbase?parse=${imprint}`
   }
 
   // console.log(url)
@@ -21,6 +21,10 @@ const getData = async (imprint, imprint2) => {
       drugPic.classList = 'picture'
       drugPic.src = drug.imageUrl
       drugList.appendChild(drugPic)
+
+      const drugName = document.createElement('h2')
+      drugName.textContent = drug.name
+      drugList.appendChild(drugName)
     })
     return response
   } catch (error) {
