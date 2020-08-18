@@ -23,8 +23,12 @@ const getData = async (imprint, imprint2) => {
       drugList.appendChild(drugPic)
 
       const drugName = document.createElement('h2')
-      drugName.textContent = drug.name
+      drugName.textContent = 'MEDICATION NAME: ' + drug.name
       drugList.appendChild(drugName)
+
+      const drugManu = document.createElement('h2')
+      drugManu.textContent = 'MANUFACTURER: ' + drug.labeler
+      drugList.appendChild(drugManu)
     })
     return response
   } catch (error) {
