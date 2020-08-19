@@ -26,6 +26,10 @@ const getData = async (imprint, imprint2) => {
       drugName.textContent = 'MEDICATION NAME: ' + drug.name
       drugList.appendChild(drugName)
 
+      const drugNdc = document.createElement('h2')
+      drugNdc.textContent = 'NDC: ' + drug.ndc11
+      drugList.appendChild(drugNdc)
+
       const drugManu = document.createElement('h2')
       drugManu.textContent = 'MANUFACTURER: ' + drug.labeler
       drugList.appendChild(drugManu)

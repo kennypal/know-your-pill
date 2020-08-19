@@ -1,0 +1,30 @@
+header {
+  border: 1px solid
+}
+
+#imprint-form {
+  border: 1px solid;
+  /* height: 50%; */
+  width: 50%;
+  padding: 5px
+}
+
+input {
+  margin-bottom: 10px
+}
+
+.drug-list {
+  display: flex;
+  flex-direction: column;
+  width: 50%
+}
+
+main {
+  display: flex
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%
+}

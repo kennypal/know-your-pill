@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,27 @@
   <script src="./script.js" defer></script>
   <title>Know Your Pill</title>
 </head>
-<body>
+<header>
   <h1>Know Your Pill</h1>
-  <form id="imprint-form">
-    <input type="text" id="imprint-1" placeholder="Find Med"><br>
-    <input type="text" id="imprint-2" placeholder="Find Med"><br>
-    <!-- <input type="text" id="color" placeholder="Find Med"><br> -->
-    <!-- <input type="text" id="shape" placeholder="Find Med"><br> -->
-    <input type="submit" id="get-imprint">
-  </form>
-  <div class="drug-list">
+</header>
 
-  </div>
+<body>
+  <main>
+    <form id="imprint-form">
+      <label for="first-imprint">First Imprint:</label><br>
+      <input type="text" id="imprint-1"><br>
+      <label for="second-imprint">Second Imprint (if applicable):</label><br>
+      <input type="text" id="imprint-2"><br>
+      <!-- <input type="text" id="color" placeholder="Find Med"><br> -->
+      <!-- <input type="text" id="shape" placeholder="Find Med"><br> -->
+      <input type="submit" id="get-imprint" value="Search">
+    </form>
+    <div class="drug-list">
+
+    </div>
+  </main>
 </body>
+<footer>
+  <p>Author: Kenneth Palces - GA SEI Student</p>
+</footer>
 </html>
