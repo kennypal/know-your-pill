@@ -16,13 +16,17 @@
 <body>
   <main>
     <form id="imprint-form">
-      <label for="first-imprint" class="content">First Imprint:</label>
-      <input type="text" id="imprint-1" class="content">
-      <label for="second-imprint" class="content">Second Imprint (if applicable):</label>
-      <input type="text" id="imprint-2" class="content">
-      <!-- <input type="text" id="color" placeholder="Find Med"><br> -->
-      <!-- <input type="text" id="shape" placeholder="Find Med"><br> -->
-      <input type="submit" id="get-imprint" value="Search">
+      <div class="input">
+        <label for="first-imprint" class="content">First Imprint:</label>
+        <input type="text" id="imprint-1" class="value">
+      </div>
+      <div class="input">
+        <label for="second-imprint" class="content">Second Imprint (if applicable):</label>
+        <input type="text" id="imprint-2" class="value">
+      </div>
+      <div class="input">
+        <input type="submit" id="get-imprint" value="Search">
+      </div>
     </form>
     <div class="drug-list">
 
@@ -32,4 +36,5 @@
 <footer>
   <p>Author: Kenneth Palces - GA SEI Student</p>
 </footer>
+
 </html>

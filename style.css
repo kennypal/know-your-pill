@@ -16,10 +16,24 @@ header {
   justify-content: space-around;
 }
 
-.drug-div {
-  display: flex;
+.drug {
+  width: 30vw;
 }
 
-.drug {
-  width: 400px;
+@media screen and (max-width: 480px) {
+  #imprint-form, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .drug-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .drug {
+    width: 75vw;
+  }
 }
