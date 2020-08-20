@@ -11,28 +11,38 @@ const getData = async (imprint, imprint2) => {
   try {
     const response = await axios.get(url)
     const res = (response.data.nlmRxImages)
-    const drugList = document.querySelector('.drug-list')
+    // const drugList = document.querySelector('.drug-list')
 
     removeDrug()
 
     res.forEach((drug) => {
       // console.log(drug.name)
+      const drugList = document.querySelector('.drug-list')
+
+      const drugDiv = document.createElement('div')
+      drugDiv.classList = '.drug-div'
+      drugList.append(drugDiv)
+
       const drugPic = document.createElement('img')
-      drugPic.classList = 'picture'
+      drugPic.classList = 'drug'
       drugPic.src = drug.imageUrl
-      drugList.appendChild(drugPic)
+      drugDiv.appendChild(drugPic)
 
-      const drugName = document.createElement('h2')
+      const drugName = document.createElement('p')
+      drugName.classList = 'drug'
       drugName.textContent = 'MEDICATION NAME: ' + drug.name
-      drugList.appendChild(drugName)
+      drugDiv.appendChild(drugName)
 
-      const drugNdc = document.createElement('h2')
+      const drugNdc = document.createElement('p')
+      drugNdc.classList = 'drug'
       drugNdc.textContent = 'NDC: ' + drug.ndc11
-      drugList.appendChild(drugNdc)
+      drugDiv.appendChild(drugNdc)
 
-      const drugManu = document.createElement('h2')
+      const drugManu = document.createElement('p')
+      drugManu.classList = 'drug'
       drugManu.textContent = 'MANUFACTURER: ' + drug.labeler
-      drugList.appendChild(drugManu)
+      drugDiv.appendChild(drugManu)
+
     })
     return response
   } catch (error) {

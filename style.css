@@ -3,28 +3,23 @@ header {
 }
 
 #imprint-form {
+  display: flex;
   border: 1px solid;
-  /* height: 50%; */
-  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 5px
-}
-
-input {
-  margin-bottom: 10px
 }
 
 .drug-list {
   display: flex;
-  flex-direction: column;
-  width: 50%
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-main {
-  display: flex
+.drug-div {
+  display: flex;
 }
 
-footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%
+.drug {
+  width: 400px;
 }
