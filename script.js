@@ -19,7 +19,7 @@ const getData = async (imprint, imprint2) => {
 
       const drugDiv = document.createElement('div')
       drugDiv.classList = '.drug-div'
-      drugList.append(drugDiv)
+      drugList.appendChild(drugDiv)
 
       const drugPic = document.createElement('img')
       drugPic.classList = 'drug'

@@ -11,18 +11,26 @@ body {
   position: relative;
   width: 100%;
   height: 30vh;
-  background: url('https://i.imgur.com/7Xl9ZQE.png');
+  background: url('https://i.imgur.com/7Xl9ZQE.png'); /* Added effect courtesy of Adobe Photoshop */
   background-size: 100% 100%;
 }
 
-.text {
+p {
+  padding: 0 0 0 0.75vh
+}
+
+.title {
   font-size: 50pt;
-  padding: 20vh 0 0 3vh
+  padding: 11vh 0 0 3vh
+}
+
+.description {
+  font-size: 20pt;
+  padding: 0 0 0 3.5vh
 }
 
 #imprint-form {
   display: flex;
-  /* border: 1px solid; */
   flex-direction: column;
   justify-content: flex-start;
   padding: 5px
@@ -37,6 +45,10 @@ body {
 
 .drug {
   width: 30vw;
+}
+
+footer {
+  text-align: center
 }
 
 @media screen and (max-width: 480px) {
@@ -56,9 +68,14 @@ body {
     width: 75vw;
   }
 
-  .text {
+  .title {
     font-size: 50pt;
     text-align: center;
     padding: 0
+  }
+
+  .description {
+    font-size: 20pt;
+    padding: 0 0 0 3.5vh
   }
 }
