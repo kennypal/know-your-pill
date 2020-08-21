@@ -73,4 +73,6 @@ function removeDrug() {
    while (appendElement.lastChild) {
      appendElement.removeChild(appendElement.lastChild)
    }
- }
+}
+ 
+// Any comment
