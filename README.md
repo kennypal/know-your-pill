@@ -6,7 +6,7 @@ Know Your Pill
 
 ## Project Description
 
-This app will let you identify a medication that you have found and you want to make sure what it is. This can be beneficial to those who are taking more than 2 medications a day or people who work in the pharmacy and wants to know if it is a controlled substance or not.
+This app will let you identify a medication that you have found and want to know what it is. This can be beneficial to those who are taking more than 2 medications a day or people who work in the pharmacy and wants to know if it is a controlled substance or not.
 
 ## API and Data Sample
 
@@ -87,11 +87,11 @@ imageSize: 468895
 | Find and Test API | H | 3hrs | 3hrs | 3hrs |
 | Construct HTML | H | 3hrs | 3hrs | 3hrs |
 | Adding Form | H | 3hrs| 2hrs | 2hrs |
-| Pseudocode JavaScript | H | 3hrs | 4hrs | 4hrs |
+| Pseudocode JavaScript | H | 3hrs | 3hrs | 3hrs |
 | Working with API | H | 3hrs | 4hrs | 4hrs |
 | Working with the DOM | H | 3hrs| 3hrs | 3hrs |
 | Test and debug Web App | N | 3hrs| 2hrs | 2hrs |
-| Style Web App | N | 3hrs| 2hrs | 2hrs |
+| Style Web App | N | 3hrs| 3hrs | 3hrs |
 | Apply Flexbox | H | 3hrs | 4hrs | 4hrs |
 | Apply Responsive Design | H | 3hrs| 3hrs | 3hrs |
 | Rerun Web App with CSS and debug | H | 3hrs | 3hrs | 3hrs |
